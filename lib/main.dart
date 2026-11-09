@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-
-//main method for running our app
 void main() {
   runApp(const MyApp());
 }
@@ -12,16 +10,16 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: "PROFILE APP", //name of the app
-      //first page
+      title: "PROFILE APP", 
+      
       home: Scaffold(
-        //how do i want my app to look/design
+        
         backgroundColor: Color(0xFFF1F5FA),
         appBar: AppBar(
-          backgroundColor: Colors.blue, //color of appbar
+          backgroundColor: Colors.blue, 
           foregroundColor: Colors.white,
-          title: Text("Profile"), //name on appbar
-          leading: Icon(Icons.arrow_back_ios), //first widget on appbar
+          title: Text("Profile"), 
+          leading: Icon(Icons.arrow_back_ios), 
           actions: [
             Icon(Icons.more_vert_outlined),
           ],
@@ -119,13 +117,13 @@ class MyApp extends StatelessWidget {
                 color: Colors.white,
                 borderRadius: BorderRadius.circular(16),
               ),
-              clipBehavior: Clip.antiAlias, //round the corners
+              clipBehavior: Clip.antiAlias, 
               width: 400,
-              margin: EdgeInsets.only(left: 8, right: 8, top: 16, bottom: 20), //space outside
+              margin: EdgeInsets.only(left: 8, right: 8, top: 16, bottom: 20), 
             ),
           ),
         ),
       ),
-    ); //JUST LIKE LAND WHEN BUILDING
+    ); 
   }
 }
