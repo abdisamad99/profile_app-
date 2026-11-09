@@ -96,14 +96,22 @@ class MyApp extends StatelessWidget {
                   ),
                   SizedBox(height: 10),
                   ElevatedButton(
-                    style: ElevatedButton.styleFrom(
-                      backgroundColor: Colors.blue,
-                      foregroundColor: Colors.white,
-                      minimumSize: Size(300, 48),
-                    ),
-                    onPressed: () {},
-                    child: Text("Contact Me"),
-                  ),
+  style: ElevatedButton.styleFrom(
+    backgroundColor: Colors.blue,
+    foregroundColor: Colors.white,
+    minimumSize: Size(300, 48),
+  ),
+  onPressed: () {
+  ScaffoldMessenger.of(
+    context,
+  ).showSnackBar(
+    SnackBar(
+      content: Text("Thank you for contacting me!"),
+    ),
+  );
+},
+  child: Text("Contact Me"),
+),
                   SizedBox(height: 20),
                 ],
               ),
